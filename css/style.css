@@ -144,8 +144,8 @@ footer {
         display: initial;
     }
     .icon {
-        height: 30px;
-        line-height: 30px;
+        height: 32px;
+        line-height: 32px;
         vertical-align: middle;
     }
     .playlist {
@@ -157,6 +157,16 @@ footer {
         background-color: rgb(124, 126, 131);
         padding: 8px;
         margin-right: 5px;
+    }
+    .bot-log hr {
+        border: 1px solid rgba(124, 126, 131, 0.5);
+    }
+    #profile {
+        height: 30px;
+        margin-right: 5px;
+    }
+    .user .c-grey {
+        color: white;
     }
     main {
         width: calc(100% - 250px);
