@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/12bool.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
@@ -18,10 +20,33 @@
             <nav class="nav-bar">
                 <div class="sidebar-logo d-flex d-column">
                     <div class="upper-logo">
-                        <img src="./img/logo-small.svg" alt="Logo Spotify">
-                        <img src="./img/home.svg" alt="Logo Spotify">
-                        <img src="./img/search.svg" alt="Logo Spotify">
-                        <img src="./img/libreria.svg" alt="Logo Spotify">
+                        <img id="logo-big" src="./img/logo.svg" alt="Logo Spotify">
+                        <img id="logo-small" src="./img/logo-small.svg" alt="Logo Spotify">
+                        <div>
+                            <img class="icon" src="./img/home.svg" alt="Logo Spotify">
+                            <span class="c-grey">Home</span>
+                        </div>
+                        <div>
+                            <img class="icon" src="./img/search.svg" alt="Logo Spotify">
+                            <span class="c-grey">Cerca</span>
+                        </div>
+                        <div class="mb-20">
+                            <img class="icon" src="./img/libreria.svg" alt="Logo Spotify">
+                            <span class="c-grey">La tua libreria</span>
+                        </div>
+                        <section class="playlist">
+                            <h4 class="mb-10">PLAYLIST</h4>
+                            <span class="c-grey mb-100"><i class="fas fa-plus c-grey"></i> Crea Playlist</span>
+                            <ul>
+                                <li class="mt-20 mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                                <li class="mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                                <li class="mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                                <li class="mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                                <li class="mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                                <li class="mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                                <li class="mb-20"><a href="#"><span>Nome Playlist</span></a></li>
+                            </ul>
+                        </section>
                     </div>
                     <div class="bot-log">
                         <img id="download" src="./img/download.svg" alt="">

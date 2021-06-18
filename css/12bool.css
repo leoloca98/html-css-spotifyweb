@@ -23,12 +23,26 @@
     max-width: 100%;
 }
 
-/* **********  POSITION  ********** */
+/* **********  FLOAT  ********** */
 
 .clearfix::after {
     display: table;
     clear: both;
     content: "";
+}
+
+.f-left {
+    float: left;
+}
+
+/* **********  POSITION  ********** */
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
 }
 
 .pos-center {
@@ -40,6 +54,130 @@
 /* ********** FONT / TEXT ********** */
 
 /* ********** MARGIN ********** */
+
+/* MARGIN BOTTOM */
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+/* MARGIN LEFT */
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+.ml-90 {
+    margin-left: 90px;
+}
+
+.ml-80 {
+    margin-left: 80px;
+}
+
+.ml-70 {
+    margin-left: 70px;
+}
+
+.ml-60 {
+    margin-left: 60px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
 
 /* ********** PADDING ********** */
 
