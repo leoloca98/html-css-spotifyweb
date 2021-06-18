@@ -6,8 +6,12 @@ body {
     color: white;
 }
 
-d-flex {
+.d-flex {
     display: flex;
+}
+
+.d-column {
+    flex-direction: column;
 }
 
 .c-grey {
@@ -28,6 +32,28 @@ d-flex {
     position: absolute;
     left: 0;
     top: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-bar img {
+    margin-bottom: 8px;
+}
+
+.sidebar-logo{
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#download {
+    height: 20px;
+    text-align: center;
+}
+
+#profile {
+    background-color: rgb(124, 126, 131);
+    border-radius: 50%;
 }
 
 main {
@@ -44,6 +70,7 @@ header {
     height: 100px;
     width: calc(100% - 60px);
     top: 0;
+    right: 0;
     background-color: rgba(8, 11, 18, 0.5);
 }
 
@@ -52,11 +79,12 @@ header>div {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    width: 100%;
     padding-right: 10px;
 }
 
 .btn-empty {
-    padding: 15px 40px;
+    padding: 12px 28px;
     border-radius: 25px;
     border: 1px solid rgb(255, 255, 255, 0.9);
 }
@@ -76,75 +104,15 @@ footer {
         width: calc(100% - 250px);
         margin-left: 250px;
     }
-    header>div{
-        padding-right: 200px;
-    }
 }
 
 /* ! VIEWPORT MEDIUM >= 768px */
 
-@media screen and (min-width: 768px) {
-    .nav-bar {
-        background-color: black;
-        width: 250px;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    main {
-        height: 100%;
-        width: calc(100% - 250px);
-        margin-left: 250px;
-        background-color: rgb(20, 25, 34);
-        overflow: scroll;
-        position: relative;
-    }
-    header {
-        width: calc(100% - 60px);
-        height: 100px;
-        position: fixed;
-        top: 0;
-        background-color: rgba(8, 11, 18, 0.5);
-    }
-    footer {
-        height: 100px;
-        /* background-color: rgb(40, 40, 40); */
-        background-color: pink;
-    }
-}
+@media screen and (min-width: 768px) {}
 
 /* ! VIEWPORT LARGE >= 992px */
 
 @media screen and (min-width: 992px) {
-    .nav-bar {
-        background-color: black;
-        width: 250px;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    main {
-        height: 100%;
-        width: calc(100% - 250px);
-        margin-left: 250px;
-        background-color: rgb(20, 25, 34);
-        overflow: scroll;
-        position: relative;
-    }
-    header {
-        width: calc(100% - 60px);
-        height: 100px;
-        position: fixed;
-        top: 0;
-        background-color: rgba(8, 11, 18, 0.5);
-    }
-    footer {
-        height: 100px;
-        /* background-color: rgb(40, 40, 40); */
-        background-color: pink;
-    }
     /* .wrapper {
         height: calc(100vh - 100px);
         background-color: forestgreen;
