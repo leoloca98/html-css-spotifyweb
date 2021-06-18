@@ -30,6 +30,8 @@ body {
 
 /* ! MOBILE FIRST XS < 576px */
 
+/* SIDEBAR */
+
 .nav-bar {
     background-color: black;
     width: 60px;
@@ -51,6 +53,8 @@ body {
     justify-content: space-between;
 }
 
+/* ICONS */
+
 #logo-big {
     display: none;
 }
@@ -69,6 +73,8 @@ span[class="c-grey"] {
     display: none;
 }
 
+/* PLAYLIST */
+
 .playlist {
     display: none;
 }
@@ -79,6 +85,8 @@ span[class="c-grey"] {
     color: rgb(124, 126, 131);
 }
 
+/* MAIN */
+
 main {
     position: relative;
     height: 100%;
@@ -87,6 +95,8 @@ main {
     background-color: rgb(20, 25, 34);
     overflow: scroll;
 }
+
+/* HEADER */
 
 header {
     position: fixed;
@@ -112,9 +122,39 @@ header>div {
     border: 1px solid white;
 }
 
+/* FOOTER */
+
 footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
+}
+
+.row {
+    height: 100px;
+}
+
+.col-xs-4 {
+    height: 100px;
+    border: 1px solid white;
+    align-items: center;
+}
+
+.col-xs-4 img {
+    height: 30%;
+    margin: 0 10px;
+}
+
+.col-xs-4 li, .col-xs-4 a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.col-xs-4 li:first-child {
+    color: white;
+}
+
+.col-xs-4 li {
+    color: rgb(124, 126, 131);
 }
 
 /* ! VIEWPORT SMALL >= 576px */
