@@ -1,39 +1,42 @@
-/* *DEKSTOP FIRST* */
+/* *GENERICS* */
 
 body {
-    font-family: sans-serif;
+    font-family: "Montserrat";
+    color: white;
 }
 
 d-flex {
     display: flex;
 }
 
-footer {
-    height: 100px;
-    background-color: #333;
+.c-grey {
+    color: rgb(124, 126, 131);
 }
 
 .wrapper {
     height: calc(100vh - 100px);
-    background-color: forestgreen;
+    background-color: rgb(20, 25, 34);
     position: relative;
 }
 
-.wrapper nav {
+/* ! MOBILE FIRST XS */
+
+.nav-bar {
     background-color: black;
-    width: 210px;
+    width: 60px;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.wrapper main {
+main {
     height: 100%;
-    width: calc(100% - 210px);
-    margin-left: 210px;
-    background-color: purple;
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    background-color: rgb(20, 25, 34);
     overflow: scroll;
+    position: relative;
 }
 
 header {
@@ -42,4 +45,138 @@ header {
     position: fixed;
     top: 0;
     background-color: rgba(8, 11, 18, 0.5);
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+}
+
+/* ! VIEWPORT SMALL >= 576px */
+
+@media screen and (min-width: 576px) {
+    .nav-bar {
+        background-color: black;
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    main {
+        height: 100%;
+        width: calc(100% - 250px);
+        margin-left: 250px;
+        background-color: rgb(20, 25, 34);
+        overflow: scroll;
+        position: relative;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(8, 11, 18, 0.5);
+    }
+    footer {
+        height: 100px;
+        background-color: rgb(40, 40, 40);
+    }
+}
+
+/* ! VIEWPORT MEDIUM >= 768px */
+
+@media screen and (min-width: 768px) {
+    .nav-bar {
+        background-color: black;
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    main {
+        height: 100%;
+        width: calc(100% - 250px);
+        margin-left: 250px;
+        background-color: rgb(20, 25, 34);
+        overflow: scroll;
+        position: relative;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(8, 11, 18, 0.5);
+    }
+    footer {
+        height: 100px;
+        /* background-color: rgb(40, 40, 40); */
+        background-color: pink;
+    }
+}
+
+/* ! VIEWPORT LARGE >= 992px */
+
+@media screen and (min-width: 992px) {
+    .nav-bar {
+        background-color: black;
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    main {
+        height: 100%;
+        width: calc(100% - 250px);
+        margin-left: 250px;
+        background-color: rgb(20, 25, 34);
+        overflow: scroll;
+        position: relative;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(8, 11, 18, 0.5);
+    }
+    footer {
+        height: 100px;
+        /* background-color: rgb(40, 40, 40); */
+        background-color: pink;
+    }
+    /* .wrapper {
+        height: calc(100vh - 100px);
+        background-color: forestgreen;
+        position: relative;
+    }
+    .wrapper main {
+        height: 100%;
+        width: calc(100% - 210px);
+        margin-left: 210px;
+        background-color: purple;
+        overflow: scroll;
+    }
+    .wrapper .nav-bar {
+        background-color: black;
+        width: 210px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(8, 11, 18, 0.5);
+    }
+    footer {
+        height: 100px;
+        background-color: #333;
+    } */
 }
