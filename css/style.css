@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+}
+
+d-flex {
+    display: flex;
+}
+
+d-column {
+    flex-direction: column;
+}
+
+footer {
+    height: 100px;
+    background-color: #333;
+}
+
+.wrapper {
+    height: calc(100vh - 100px);
+    background-color: forestgreen;
+    position: relative;
+}
+
+.wrapper nav {
+    background-color: black;
+    width: 210px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wrapper main {
+    height: 100%;
+    width: calc(100% - 210px);
+    margin-left: 210px;
+    background-color: purple;
+}
