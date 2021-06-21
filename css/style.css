@@ -96,6 +96,47 @@ main {
     overflow: scroll;
 }
 
+#content {
+    padding: 0 25px;
+}
+
+.main-nav {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.main-nav li, .main-nav a {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(124, 126, 131);
+    padding-right: 5px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.gallery .song {
+    flex-basis: 50%;
+    padding: 0 10px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
 /* HEADER */
 
 header {
@@ -104,7 +145,7 @@ header {
     width: calc(100% - 60px);
     top: 0;
     right: 0;
-    background-color: rgba(8, 11, 18, 0.5);
+    background-color: rgba(8, 11, 18, 0.8);
 }
 
 header>div {
@@ -113,7 +154,7 @@ header>div {
     align-items: center;
     height: 100%;
     width: 100%;
-    padding-right: 10px;
+    padding-right: 25px;
 }
 
 .btn-empty {
@@ -127,6 +168,8 @@ header>div {
 footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
+    position: relative;
+    z-index: 1;
 }
 
 .row {
@@ -212,44 +255,23 @@ footer {
         width: calc(100% - 250px);
         margin-left: 250px;
     }
+    .gallery .song {
+        flex-basis: 50%;
+    }
 }
 
 /* ! VIEWPORT MEDIUM >= 768px */
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .gallery .song {
+        flex-basis: 25%;
+    }
+}
 
 /* ! VIEWPORT LARGE >= 992px */
 
 @media screen and (min-width: 992px) {
-    /* .wrapper {
-        height: calc(100vh - 100px);
-        background-color: forestgreen;
-        position: relative;
+    .gallery .song {
+        flex-basis: calc(100% / 6);
     }
-    .wrapper main {
-        height: 100%;
-        width: calc(100% - 210px);
-        margin-left: 210px;
-        background-color: purple;
-        overflow: scroll;
-    }
-    .wrapper .nav-bar {
-        background-color: black;
-        width: 210px;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    header {
-        width: 100%;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        background-color: rgba(8, 11, 18, 0.5);
-    }
-    footer {
-        height: 100px;
-        background-color: #333;
-    } */
 }
