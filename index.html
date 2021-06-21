@@ -15,267 +15,268 @@
 </head>
 
 <body>
-    <div>
-        <div class="wrapper d-flex">
-            <!-- *SIDEBAR* -->
-            <nav class="nav-bar">
-                <div class="sidebar-logo d-flex d-column">
-                    <!-- ICONS TOP + BOT -->
-                    <div class="upper-logo">
-                        <img id="logo-big" src="./img/logo.svg" alt="Logo Spotify">
-                        <img id="logo-small" src="./img/logo-small.svg" alt="Logo Spotify">
-                        <div>
-                            <a href="#">
-                                <img class="icon" src="./img/home.svg" alt="Logo Spotify">
-                                <span class="none">Home</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img class="icon" src="./img/search.svg" alt="Logo Spotify">
-                                <span class="none">Cerca</span>
-                            </a>
-                        </div>
-                        <div class="mb-20">
-                            <a href="#">
-                                <img class="icon" src="./img/libreria.svg" alt="Logo Spotify">
-                                <span class="none">La tua libreria</span>
-                            </a>
-                        </div>
+    <div class="container-fluid">
+        <div>
+            <div class="wrapper d-flex">
+                <!-- *SIDEBAR* -->
+                <nav class="nav-bar">
+                    <div class="sidebar-logo d-flex d-column">
+                        <!-- ICONS TOP + BOT -->
+                        <div class="upper-logo">
+                            <img id="logo-big" src="./img/logo.svg" alt="Logo Spotify">
+                            <img id="logo-small" src="./img/logo-small.svg" alt="Logo Spotify">
+                            <div>
+                                <a href="#">
+                                    <img class="icon" src="./img/home.svg" alt="Logo Spotify">
+                                    <span class="none">Home</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img class="icon" src="./img/search.svg" alt="Logo Spotify">
+                                    <span class="none">Cerca</span>
+                                </a>
+                            </div>
+                            <div class="mb-20">
+                                <a href="#">
+                                    <img class="icon" src="./img/libreria.svg" alt="Logo Spotify">
+                                    <span class="none">La tua libreria</span>
+                                </a>
+                            </div>
 
-                        <!-- PLAYLIST -->
-                        <section class="playlist">
-                            <h4 class="mb-10">PLAYLIST</h4>
-                            <span class="none mb-100"><a href="#"> <i class="fas fa-plus none"></i> Crea
-                                    Playlist</a></span>
+                            <!-- PLAYLIST -->
+                            <section class="playlist">
+                                <h4 class="mb-10">PLAYLIST</h4>
+                                <span class="none mb-100"><a href="#"> <i class="fas fa-plus none"></i> Crea
+                                        Playlist</a></span>
+                                <ul>
+                                    <li class="mt-20 mb-20"><a href="#"><span>Heavy Metal</span></a></li>
+                                    <li class="mb-20"><a href="#"><span>Quello che vi consiglio</span></a></li>
+                                    <li class="mb-20"><a href="#"><span>Techno/House</span></a></li>
+                                    <li class="mb-20"><a href="#"><span>Lo-Fi</span></a></li>
+                                    <li class="mb-20"><a href="#"><span>WorldWide</span></a></li>
+                                    <li class="mb-20"><a href="#"><span>Rock</span></a></li>
+                                    <li class="mb-20"><a href="#"><span>Country</span></a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="bot-logo">
+                            <div class="down">
+                                <a href="#">
+                                    <img class="icon" id="download" src="./img/download.svg" alt="">
+                                    <span class="none">Installa App</span>
+                                </a>
+                            </div>
+                            <hr class="mb-10">
+                            <div class="user">
+                                <a href="#">
+                                    <img class="icon" id="profile" src="./img/profile.svg" alt="">
+                                    <span class="none">Leonardo Locatelli</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- * MAIN * -->
+                <main>
+                    <!-- * HEADER * -->
+                    <header>
+                        <!-- BUTTON -->
+                        <div>
+                            <a href="#">
+                                <span class="btn-empty">EFFETTUA L'UPGRADE</span>
+                            </a>
+                        </div>
+                    </header>
+                    <!-- *CONTENUTO* -->
+                    <section id="content">
+                        <!-- CATEGORIES -->
+                        <nav class="main-nav">
                             <ul>
-                                <li class="mt-20 mb-20"><a href="#"><span>Heavy Metal</span></a></li>
-                                <li class="mb-20"><a href="#"><span>Quello che vi consiglio</span></a></li>
-                                <li class="mb-20"><a href="#"><span>Techno/House</span></a></li>
-                                <li class="mb-20"><a href="#"><span>Lo-Fi</span></a></li>
-                                <li class="mb-20"><a href="#"><span>WorldWide</span></a></li>
-                                <li class="mb-20"><a href="#"><span>Rock</span></a></li>
-                                <li class="mb-20"><a href="#"><span>Country</span></a></li>
+                                <li class="active"><a href="#">IN EVIDENZA</a></li>
+                                <li><a href="#">PODCAST</a></li>
+                                <li><a href="#">CLASSIFICHE</a></li>
+                                <li><a href="#">GENERI E MOOD</a></li>
+                                <li><a href="#">NUOVE USCITE</a></li>
+                                <li><a href="#">SOPRI</a></li>
+                            </ul>
+                        </nav>
+                        <!-- RECENTLY PLAYED -->
+                        <section id="rec-played" class="mb-50">
+                            <h2 class="mb-40">Recently Played</h2>
+                            <ul class="gallery">
+                                <li class="Heavy-Metal song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                                        </figure>
+                                        <h4 class="mb-10 white">Heavy Metal</h4>
+                                        <span class="subtitle c-grey">Subtitle</span>
+                                    </article>
+                                </li>
+                                <li class="Stranger-Things song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/stranger.jpeg" alt="Stranger Things">
+                                        </figure>
+                                        <h4 class="mb-10 white">Stranger Things, Vol 1 (a Netflix Originals Series
+                                            Soundtrack</h4>
+                                        <span class="subtitle c-grey">Kyle Dixon & Micheal Stein</span>
+                                    </article>
+                                </li>
+                                <li class="Quiet-Place song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
+                                        </figure>
+                                        <h4 class="mb-10 white">A Quiet Place</h4>
+                                        <span class="subtitle c-grey">Subtitle</span>
+                                    </article>
+                                </li>
+                                <li class="Split song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/split.jpeg" alt="Split">
+                                        </figure>
+                                        <h4 class="mb-10 white">Split</h4>
+                                        <span class="subtitle c-grey">Subtitle</span>
+                                    </article>
+                                </li>
+                                <li class="Wellness song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/cure.jpeg" alt="A Cure For Wellness">
+                                        </figure>
+                                        <h4 class="mb-10 white">A Cure For Wellness</h4>
+                                        <span class="subtitle c-grey">Subtitle</span>
+                                    </article>
+                                </li>
+                                <li class="Sinister song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/sinister.jpeg" alt="Sinister">
+                                        </figure>
+                                        <h4 class="mb-10 white">Sinister</h4>
+                                        <span class="subtitle c-grey">Subtitle</span>
+                                    </article>
+                                </li>
                             </ul>
                         </section>
-                    </div>
-                    <div class="bot-logo">
-                        <div class="down">
-                            <a href="#">
-                                <img class="icon" id="download" src="./img/download.svg" alt="">
-                                <span class="none">Installa App</span>
-                            </a>
+
+                        <!-- Creato per Te -->
+                        <section id="create-for-you">
+                            <h2 class="mb-20">Creato per Leonardo Locatelli</h2>
+                            <div class="mb-40 c-grey">Più ascolti, più accurati saranno i suggerimenti</div>
+                            <ul class="gallery">
+                                <li class="Release-Radar song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/radar.jpeg" alt="Release Radar">
+                                        </figure>
+                                        <h4 class="mb-10 white">Release Radar</h4>
+                                    </article>
+                                </li>
+                                <li class="Daily-Mix song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img src="./img/mixdaily.jpeg" alt="Daily Mix">
+                                        </figure>
+                                        <h4 class="mb-10 white">Daily Mix</h4>
+                                    </article>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Artisti più Popolari -->
+                        <section id="popular-artist">
+                            <h2 class="mb-20">Artisti più popolari</h2>
+                            <div class="mb-40 c-grey">Più ascolti, più accurati saranno i suggerimenti</div>
+                            <ul class="gallery">
+                                <li class="Lana-del-Rey song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img class="circle" src="./img/youg.jpeg" alt="Lana del Rey">
+                                        </figure>
+                                        <h4 class="mb-10 white">Lana del Rey</h4>
+                                    </article>
+                                </li>
+                                <li class="Ludovico-Einaudi song">
+                                    <article class="mb-20">
+                                        <figure class="mb-10">
+                                            <i class="far fa-play-circle play"></i>
+                                            <img class="circle" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                        </figure>
+                                        <h4 class="mb-10 white">Ludovico Einaudi</h4>
+                                    </article>
+                                </li>
+                        </section>
+                    </section>
+                </main>
+            </div>
+
+            <!-- * FOOTER * -->
+            <footer>
+                <div class="row">
+                    <!-- 1° Colonna -->
+                    <div class="first col-xs-3 d-flex">
+                        <img src="./img/sinister.jpeg" alt="Foto Album">
+                        <div>
+                            <ul>
+                                <li><span>Sinister</span></li>
+                                <li><span>Brano</span></li>
+                                <li><span>Nome</span></li>
+                            </ul>
                         </div>
-                        <hr class="mb-10">
-                        <div class="user">
-                            <a href="#">
-                                <img class="icon" id="profile" src="./img/profile.svg" alt="">
-                                <span class="none">Leonardo Locatelli</span>
-                            </a>
+                        <div class="interaction ml-10 c-grey">
+                            <div><i class="far fa-heart size-20"></i></div>
+                            <div><i class="far fa-folder size-20"></i></div>
                         </div>
                     </div>
-                </div>
-            </nav>
-            <!-- * MAIN * -->
-            <main>
-                <!-- * HEADER * -->
-                <header>
-                    <!-- BUTTON -->
-                    <div>
-                        <a href="#">
-                            <span class="btn-empty">EFFETTUA L'UPGRADE</span>
-                        </a>
-                    </div>
-                </header>
-                <!-- *CONTENUTO* -->
-                <section id="content">
-                    <!-- CATEGORIES -->
-                    <nav class="main-nav">
-                        <ul>
-                            <li class="active"><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SOPRI</a></li>
-                        </ul>
-                    </nav>
-                    <!-- RECENTLY PLAYED -->
-                    <section id="rec-played" class="mb-50">
-                        <h2 class="mb-40">Recently Played</h2>
-                        <ul class="gallery">
-                            <li class="Heavy-Metal song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
-                                    </figure>
-                                    <h4 class="mb-10 white">Heavy Metal</h4>
-                                    <span class="subtitle c-grey">Subtitle</span>
-                                </article>
-                            </li>
-                            <li class="Stranger-Things song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/stranger.jpeg" alt="Stranger Things">
-                                    </figure>
-                                    <h4 class="mb-10 white">Stranger Things, Vol 1 (a Netflix Originals Series
-                                        Soundtrack</h4>
-                                    <span class="subtitle c-grey">Kyle Dixon & Micheal Stein</span>
-                                </article>
-                            </li>
-                            <li class="Quiet-Place song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
-                                    </figure>
-                                    <h4 class="mb-10 white">A Quiet Place</h4>
-                                    <span class="subtitle c-grey">Subtitle</span>
-                                </article>
-                            </li>
-                            <li class="Split song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/split.jpeg" alt="Split">
-                                    </figure>
-                                    <h4 class="mb-10 white">Split</h4>
-                                    <span class="subtitle c-grey">Subtitle</span>
-                                </article>
-                            </li>
-                            <li class="Wellness song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/cure.jpeg" alt="A Cure For Wellness">
-                                    </figure>
-                                    <h4 class="mb-10 white">A Cure For Wellness</h4>
-                                    <span class="subtitle c-grey">Subtitle</span>
-                                </article>
-                            </li>
-                            <li class="Sinister song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/sinister.jpeg" alt="Sinister">
-                                    </figure>
-                                    <h4 class="mb-10 white">Sinister</h4>
-                                    <span class="subtitle c-grey">Subtitle</span>
-                                </article>
-                            </li>
-                        </ul>
-                    </section>
 
-                    <!-- Creato per Te -->
-                    <section id="create-for-you">
-                        <h2 class="mb-20">Creato per Leonardo Locatelli</h2>
-                        <div class="mb-40 c-grey">Più ascolti, più accurati saranno i suggerimenti</div>
-                        <ul class="gallery">
-                            <li class="Release-Radar song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/radar.jpeg" alt="Release Radar">
-                                    </figure>
-                                    <h4 class="mb-10 white">Release Radar</h4>
-                                </article>
-                            </li>
-                            <li class="Daily-Mix song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img src="./img/mixdaily.jpeg" alt="Daily Mix">
-                                    </figure>
-                                    <h4 class="mb-10 white">Daily Mix</h4>
-                                </article>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <!-- Artisti più Popolari -->
-                    <section id="popular-artist">
-                        <h2 class="mb-20">Artisti più popolari</h2>
-                        <div class="mb-40 c-grey">Più ascolti, più accurati saranno i suggerimenti</div>
-                        <ul class="gallery">
-                            <li class="Lana-del-Rey song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img class="circle" src="./img/youg.jpeg" alt="Lana del Rey">
-                                    </figure>
-                                    <h4 class="mb-10 white">Lana del Rey</h4>
-                                </article>
-                            </li>
-                            <li class="Ludovico-Einaudi song">
-                                <article class="mb-20">
-                                    <figure class="mb-10">
-                                        <i class="far fa-play-circle play"></i>
-                                        <img class="circle" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
-                                    </figure>
-                                    <h4 class="mb-10 white">Ludovico Einaudi</h4>
-                                </article>
-                            </li>
-                    </section>
-                </section>
-            </main>
-        </div>
-
-        <!-- * FOOTER * -->
-        <footer>
-            <div class="row">
-                <!-- 1° Colonna -->
-                <div class="first col-xs-3 d-flex">
-                    <img src="./img/sinister.jpeg" alt="Foto Album">
-                    <div>
-                        <ul>
-                            <li><span>Sinister</span></li>
-                            <li><span>Brano</span></li>
-                            <li><span>Nome</span></li>
-                        </ul>
+                    <!-- 2° Colonna -->
+                    <div class="second col-xs-6 d-flex">
+                        <div class="mb-20">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-random size 18"></i></a></li>
+                                <li><a href="#"><i class="fas fa-step-backward size-18"></i></a></li>
+                                <li><a href="#"><i class="far fa-play-circle size-32"></i></a></li>
+                                <li><a href="#"><i class="fas fa-step-forward size-18"></i></a></li>
+                                <li><a href="#"><i class="fas fa-redo-alt size-18"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="durata">
+                            <span>0.25</span>
+                            <div class="time">
+                                <div></div>
+                            </div>
+                            <span>4.35</span>
+                        </div>
                     </div>
-                    <div class="interaction ml-10 c-grey">
-                        <div><i class="far fa-heart size-20"></i></div>
-                        <div><i class="far fa-folder size-20"></i></div>
-                    </div>
-                </div>
 
-                <!-- 2° Colonna -->
-                <div class="second col-xs-6 d-flex">
-                    <div class="mb-20">
-                        <ul>
-                            <li><a href="#"><i class="fas fa-random size 18"></i></a></li>
-                            <li><a href="#"><i class="fas fa-step-backward size-18"></i></a></li>
-                            <li><a href="#"><i class="far fa-play-circle size-32"></i></a></li>
-                            <li><a href="#"><i class="fas fa-step-forward size-18"></i></a></li>
-                            <li><a href="#"><i class="fas fa-redo-alt size-18"></i></a></li>
+                    <!-- 3° Colonna -->
+                    <div class="third col-xs-3 d-flex">
+                        <ul class="ml-10">
+                            <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
+                            <li><a href="#"><i class="fas fa-desktop"></i></a></li>
+                            <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
                         </ul>
-                    </div>
-                    <div class="durata">
-                        <span>0.25</span>
-                        <div class="time">
+                        <div class="volume">
                             <div></div>
                         </div>
-                        <span>4.35</span>
                     </div>
                 </div>
-
-                <!-- 3° Colonna -->
-                <div class="third col-xs-3 d-flex">
-                    <ul class="ml-10">
-                        <li><a href="#"><i class="fas fa-list-ul"></i></a></li>
-                        <li><a href="#"><i class="fas fa-desktop"></i></a></li>
-                        <li><a href="#"><i class="fas fa-volume-up"></i></a></li>
-                    </ul>
-                    <div class="volume">
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
-
 </body>
 
 </html>

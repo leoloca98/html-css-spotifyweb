@@ -172,6 +172,7 @@ main {
 
 header {
     position: fixed;
+    z-index: 2;
     height: 100px;
     width: calc(100% - 60px);
     top: 0;
