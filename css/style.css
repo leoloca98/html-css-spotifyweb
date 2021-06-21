@@ -28,6 +28,11 @@ body {
     height: calc(100vh - 100px);
 }
 
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 /* ! MOBILE FIRST XS < 576px */
 
 /* SIDEBAR */
@@ -41,6 +46,14 @@ body {
     top: 0;
     padding: 15px;
     text-align: center;
+}
+
+.nav-bar a {
+    color: rgb(124, 126, 131);
+}
+
+.nav-bar a:hover {
+    color: white;
 }
 
 .nav-bar img {
@@ -69,7 +82,7 @@ body {
     border-radius: 50%;
 }
 
-span[class="c-grey"] {
+span[class="none"] {
     display: none;
 }
 
@@ -77,12 +90,6 @@ span[class="c-grey"] {
 
 .playlist {
     display: none;
-}
-
-.playlist li, .playlist a {
-    list-style-type: none;
-    text-decoration: none;
-    color: rgb(124, 126, 131);
 }
 
 /* MAIN */
@@ -106,8 +113,6 @@ main {
 }
 
 .main-nav li, .main-nav a {
-    list-style-type: none;
-    text-decoration: none;
     display: inline-block;
     color: rgb(124, 126, 131);
     padding-right: 5px;
@@ -303,8 +308,11 @@ footer {
     #logo-small {
         display: none;
     }
-    span[class="c-grey"] {
+    span[class="none"] {
         display: initial;
+    }
+    .nav-bar a:hover {
+        color: white;
     }
     .icon {
         height: 32px;
@@ -321,7 +329,7 @@ footer {
         padding: 8px;
         margin-right: 5px;
     }
-    .bot-log hr {
+    .bot-logo hr {
         border: 1px solid rgba(124, 126, 131, 0.5);
     }
     #profile {
