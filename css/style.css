@@ -165,7 +165,13 @@ header>div {
 .btn-empty {
     padding: 12px 28px;
     border-radius: 25px;
+    color: white;
     border: 1px solid white;
+    transition: font-size 0.5s;
+}
+
+header .btn-empty:hover {
+    font-size: 18px;
 }
 
 /* FOOTER */
